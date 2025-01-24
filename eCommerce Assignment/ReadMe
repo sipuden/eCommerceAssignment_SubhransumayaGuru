@@ -1,0 +1,95 @@
+eCommerce Assignment
+
+This repository contains the solution to the eCommerce Transactions dataset assignment. Below is an explanation of the scripts included and instructions to run them.
+
+Files Overview
+
+1. FirstName_LastName_EDA.py
+
+Description: This script performs exploratory data analysis (EDA) on the provided dataset. It analyzes customer data, product data, and transaction data to extract meaningful insights.
+
+Key Steps:
+
+Loads the datasets (Customers.csv, Products.csv, Transactions.csv).
+
+Merges the datasets for comprehensive analysis.
+
+Performs visualizations for trends in sales, region-wise performance, etc.
+
+Derives actionable business insights.
+
+2. FirstName_LastName_Lookalike.py
+
+Description: This script builds a lookalike model that recommends three similar customers for a given customer based on their profiles and transaction history.
+
+Key Steps:
+
+Aggregates customer and transaction features (e.g., total purchase value, quantity).
+
+Uses cosine similarity to find similar customers.
+
+Outputs recommendations with similarity scores for the first 20 customers (CustomerID: C0001 - C0020) into FirstName_LastName_Lookalike.csv.
+
+3. FirstName_LastName_Clustering.py
+
+Description: This script performs customer segmentation using clustering techniques.
+
+Key Steps:
+
+Preprocesses customer data by scaling numerical features.
+
+Applies K-Means clustering to group customers into segments.
+
+Evaluates clustering performance using the Davies-Bouldin Index (DB Index).
+
+Visualizes the clusters in a 2D space using PCA.
+
+4. FirstName_LastName_Lookalike.csv
+
+Description: Contains the lookalike recommendations for the first 20 customers.
+
+Format: Each row includes a customer ID and a list of three similar customers with their similarity scores.
+
+How to Run the Scripts
+
+Prerequisites
+
+Install Python 3.x.
+
+Install required Python libraries:pip install pandas numpy matplotlib seaborn scikit-learn
+
+Ensure the dataset files (Customers.csv, Products.csv, Transactions.csv) are downloaded and placed in the same directory as the scripts.
+
+Steps to Run
+
+1. Run EDA Script:python FirstName_LastName_EDA.py
+
+Outputs visualizations and insights in the terminal/graphs.
+
+2. Run Lookalike Model:python FirstName_LastName_Lookalike.py
+
+Generates the FirstName_LastName_Lookalike.csv file with the recommendations.
+
+3. Run Clustering Script:python FirstName_LastName_Clustering.py
+
+
+Displays cluster visualizations and outputs the DB Index value in the terminal.
+
+Repository Structure:
+.
+├── Customers.csv
+├── Products.csv
+├── Transactions.csv
+├── FirstName_LastName_EDA.py
+├── FirstName_LastName_Lookalike.py
+├── FirstName_LastName_Clustering.py
+├── FirstName_LastName_Lookalike.csv
+└── README.md
+
+
+Contact Information
+
+If you have any questions, feel free to reach out at [subhransumayaguru20@gmail.com].
+
+
+ThankYou!
